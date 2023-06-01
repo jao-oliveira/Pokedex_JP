@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right, #ff8c69, #7982ff);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex{
+    max-width: 1100px;
+    background-color: rgb(255, 255, 255, 0);
+    text-align: center;
+    padding: 20px 2% 5px 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+
+
+.pokedex h2{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    /*-webkit-text-stroke-width:2px;
+   -webkit-text-stroke-color:rgb(255, 255, 255);*/
+    margin-bottom: 10px;
+    border-bottom: 5px solid white;
+    transition: 0.3s;
+}
+
+
+.pokedex h2:hover{
+    color: yellow;
+}
+
+.pokemon-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.pokemon-box{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 160px;
+    height: 238px;
+    background-color: rgb(187, 255, 218);
+    padding: 2% 0;
+    border-radius: 10px;
+    margin: 10px 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pokemon-box:hover{
+    background-color: rgb(143, 255, 176);
+
+}
+
+.pokemon-box p {
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.nomepoke{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.pokemon-box img{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(242, 255, 213);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s;
+    
+}
+
+.pokemon-box img:hover{
+    width: 130px;
+    height: 130px;
+    
+}
+
+#quantidade, #pesquisaNome{
+    width: 280px;
+    padding: 5px 10px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(241, 241, 241);
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 10px;
+   
+}
+
+#quantidade:hover,
+#pesquisaNome:hover{
+    width: 310px;
+}
+
+#pesquisar{
+    width: 120px;
+    padding: 5px 20px;
+    background-color: rgb(236, 230, 255);
+    border-radius: 10px;
+    color: rgb(173, 129, 255);
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#pesquisar:hover{
+    width: 135px;
+    background-color: rgb(173, 129, 255);
+    color: white;
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .pokemon-box{ width: 160px; height: 238px;}
+    .pokemon-box img {
+        max-width: 300px;
+    }
+}
